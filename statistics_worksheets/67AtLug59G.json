@@ -29,16 +29,172 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "tshirt_quantity",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "tshirt_price",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "tshirt_price",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 9,
+                "xColumn": {
+                  "name": "tshirt_price",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "tshirt_quantity",
+                  "type": "CONTINUOUS"
+                },
+                "id": "15N0eAE"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tshirt_price",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "tshirt_quantity",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bvrnhQ6"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tshirt_price",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "tshirt_quantity",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bYZFGKM"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tshirt_price",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "tshirt_quantity",
+                  "type": "CONTINUOUS"
+                },
+                "id": "5Vzf6Lk"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "tshirt_price",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "tshirt_quantity",
+                  "type": "CONTINUOUS"
+                },
+                "id": "En8oDue"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tshirt_price",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "tshirt_quantity",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bwHgpW9"
+              }
+            ],
+            "id": "NieXmfo"
+          }
+        ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "order_date",
+            "type": "CATEGORICAL"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 5,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
+        "id": "fF4V7oM"
+      }
+    ],
     "id": "4HtegeL"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583328982453
+    "lastModifiedOn": 1583329146071
   },
   "creationTag": {
     "versionNumber": 0,
