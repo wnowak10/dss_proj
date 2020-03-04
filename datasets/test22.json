@@ -63,19 +63,19 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583327708935
+    "lastModifiedOn": 1583327633834
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583327708935
+    "lastModifiedOn": 1583327633834
   },
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/test",
+    "path": "${projectKey}/test22",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
