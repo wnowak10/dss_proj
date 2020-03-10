@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583855293122
+    "lastModifiedOn": 1583855306272
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,7 +91,7 @@
         "type": "string"
       },
       {
-        "name": "pages_visited",
+        "name": "pages_visitedaadpages_visitedaadpages_visitedaadpages_visitedaadpages_visitedaadpages_visitedaadpages_visitedaadpages_visitedaadpages_visitedaad",
         "type": "bigint"
       },
       {
