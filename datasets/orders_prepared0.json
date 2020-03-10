@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583855306272
+    "lastModifiedOn": 1583855427234
   },
   "creationTag": {
     "versionNumber": 0,
@@ -114,6 +114,10 @@
       {
         "name": "tshirt_quantity",
         "type": "double"
+      },
+      {
+        "name": "newcolumn_expression",
+        "type": "bigint"
       }
     ],
     "userModified": true
