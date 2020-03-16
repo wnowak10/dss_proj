@@ -5,7 +5,37 @@
   },
   "keys": [
     {
-      "column": "author"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "author",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "timestamp",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "date",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +45,10 @@
       "firstLastNotNull": false,
       "column": "project_key",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -31,31 +63,20 @@
       "firstLastNotNull": false,
       "column": "commit_id",
       "count": false,
+      "$idx": 1,
       "sum": false,
-      "concat": false,
+      "concat": true,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "timestamp",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "stddev": false,
-      "first": false
+      "first": false,
+      "orderColumn": "project_key",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -63,8 +84,10 @@
       "firstLastNotNull": false,
       "column": "added_files",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -79,8 +102,10 @@
       "firstLastNotNull": false,
       "column": "added_lines",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -95,8 +120,10 @@
       "firstLastNotNull": false,
       "column": "removed_files",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -111,8 +138,10 @@
       "firstLastNotNull": false,
       "column": "removed_lines",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -127,8 +156,10 @@
       "firstLastNotNull": false,
       "column": "changed_files",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -174,8 +205,32 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "author",
+            "type": "string"
+          },
+          {
+            "name": "timestamp",
+            "type": "date"
+          },
+          {
+            "name": "commit_id_concat",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
