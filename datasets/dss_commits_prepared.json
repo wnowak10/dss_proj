@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1584381975651
+    "lastModifiedOn": 1584382146301
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,6 +101,18 @@
       {
         "name": "timestamp",
         "type": "date"
+      },
+      {
+        "name": "timestamp_year",
+        "type": "bigint"
+      },
+      {
+        "name": "timestamp_month",
+        "type": "bigint"
+      },
+      {
+        "name": "year_month",
+        "type": "string"
       },
       {
         "name": "added_files",
