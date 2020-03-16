@@ -31,13 +31,42 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "UNIXTimestampParser",
       "params": {
         "inCol": "timestamp",
         "milliseconds": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "timestamp_month",
+        "outYearColumn": "timestamp_year",
+        "column": "timestamp",
+        "timezone_id": "UTC",
+        "outDayColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "year_month",
+        "columns": [
+          "timestamp_year",
+          "timestamp_month"
+        ],
+        "join": "-"
       },
       "alwaysShowComment": false
     }
@@ -50,13 +79,17 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "timestamp_year": 120,
+    "year_month": 100,
     "project_key": 127,
     "author": 100,
+    "changed_files": 113,
+    "timestamp_month": 128,
     "added_lines": 100,
     "removed_lines": 113,
-    "changed_files": 113,
     "removed_files": 113,
     "added_files": 100,
+    "timestamp_day": 113,
     "commit_id": 295,
     "timestamp": 312
   },
