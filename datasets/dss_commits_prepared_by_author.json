@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1584381993475
+    "lastModifiedOn": 1584382012918
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,6 +88,14 @@
     "columns": [
       {
         "name": "author",
+        "type": "string"
+      },
+      {
+        "name": "timestamp",
+        "type": "date"
+      },
+      {
+        "name": "commit_id_concat",
         "type": "string"
       },
       {
