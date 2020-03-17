@@ -1,5 +1,18 @@
 {
-  "endpoints": [],
+  "name": "pypy",
+  "endpoints": [
+    {
+      "modelType": "CLASSIFICATION",
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "pythonnn",
+      "type": "CUSTOM_PREDICTION"
+    }
+  ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
