@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1585595421309
+    "lastModifiedOn": 1585595435119
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,9 +99,8 @@
         "type": "string"
       },
       {
-        "name": "customer_id",
-        "type": "string",
-        "meaning": "Text"
+        "name": "customer_id9",
+        "type": "string"
       },
       {
         "name": "tshirt_category",
