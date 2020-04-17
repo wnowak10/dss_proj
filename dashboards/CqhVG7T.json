@@ -3,7 +3,27 @@
     {
       "id": "MCurGlf",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 4,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showCode": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "gHViT5p",
+            "insightType": "jupyter",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +33,11 @@
   "name": "Default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "alex"
+      "login": "admin"
     },
-    "lastModifiedOn": 1492181307423
+    "lastModifiedOn": 1587131288046
   },
   "creationTag": {
     "versionNumber": 0,
@@ -27,6 +47,7 @@
     "lastModifiedOn": 1492181307423
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
