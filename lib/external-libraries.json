@@ -8,7 +8,8 @@
     "/python": {
       "remote": "https://github.com/NicolasHug/Surprise.git",
       "checkout": "refs/heads/binarize_dataset",
-      "remotePath": ""
+      "remotePath": "",
+      "lastHash": "aef18884c4e3db0307ac1306cca984bcd34680b7"
     }
   },
   "pythonPath": [
