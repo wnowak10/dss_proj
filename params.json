@@ -18,22 +18,7 @@
   },
   "projectType": "REGULAR",
   "owner": "admin",
-  "permissions": [
-    {
-      "group": "administrators",
-      "admin": false,
-      "readProjectContent": false,
-      "writeProjectContent": true,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -196,11 +181,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588350225318
+    "lastModifiedOn": 1588352642845
   },
   "creationTag": {
     "versionNumber": 0,
