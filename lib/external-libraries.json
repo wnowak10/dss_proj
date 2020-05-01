@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "/": {
+      "remote": "https://github.com/NicolasHug/Surprise.git",
+      "checkout": "refs/heads/binarize_dataset",
+      "remotePath": ""
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "/"
   ],
   "rsrcPath": [
     "R"
