@@ -3,7 +3,6 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "pipeOut": "t",
     "autoInferSchema": false,
     "expectHeaders": false,
     "sendHeaders": false,
@@ -26,11 +25,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588509146534
+    "lastModifiedOn": 1588509161902
   },
   "creationTag": {
     "versionNumber": 0,
