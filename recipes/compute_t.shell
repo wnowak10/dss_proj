@@ -1,2 +1,1 @@
 cd $(printenv DKU_CUSTOM_VARIABLES_dip.home)/plugins/dev
-cp jtest jtest1
