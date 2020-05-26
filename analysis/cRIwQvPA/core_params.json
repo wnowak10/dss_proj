@@ -1,12 +1,55 @@
 {
   "inputDatasetSmartName": "customers_labeled",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "ColumnsConcat",
+        "params": {
+          "join": " ",
+          "columns": [
+            "user_agent_brand",
+            "user_agent_os"
+          ],
+          "outputColumn": "sys"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnsSelector",
+        "params": {
+          "keep": false,
+          "appliesTo": "COLUMNS",
+          "columns": [
+            "user_agent_os",
+            "user_agent_brand"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "customerID": 100,
+      "gender": 100,
+      "age_first_order": 128,
+      "user_agent_brand": 135,
+      "user_agent_os": 113,
+      "ip_address_country": 169,
+      "ip_address_geopoint": 183,
+      "campaign": 100,
+      "pages_visited_avg": 143,
+      "high_revenue": 105,
+      "sys": 120
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -44,7 +87,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -52,11 +97,11 @@
   "charts": [],
   "name": "Analyze customers_labeled",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590522052420
+    "lastModifiedOn": 1590522080905
   },
   "creationTag": {
     "versionNumber": 0,
