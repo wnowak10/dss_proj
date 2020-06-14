@@ -1,4 +1,22 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "conditions": [
+      {
+        "input": "customerID",
+        "col": "gender",
+        "string": "0098",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
